@@ -1,0 +1,285 @@
+
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: rgb(217, 72, 82);
+}
+/* Homepage Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#homepageLogo {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#homepageTitle {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: rgb(104, 192, 125);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#homepageDescription {
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+button {
+    background-color: rgb(73, 73, 233);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Episode Overview Styles */
+#episodeOverview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 800px; 
+    padding: 20px;
+}
+table {
+    border-collapse: collapse;
+    font-size: 0.7em; 
+    font-weight: bold;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #dddddd; 
+    padding: 4px; 
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+#chart {
+    width: 100%;
+    height: 10px;
+}
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+#backButton, #nextPageButton {
+    width: 125px; 
+    height: 50px; 
+    padding: 0; 
+    font-size: 1em;
+    border-radius: 8px; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    line-height: 50px; 
+    text-align: center; 
+    margin: 0 15px; 
+}
+#backButton {
+    background-color: rgb(217, 72, 82);
+}
+#backButton:hover {
+    background-color: #d45d6d;
+}
+#nextPageButton {
+    background-color: rgb(73, 73, 233);
+}
+#nextPageButton:hover {
+    background-color: #0056b3;
+}
+
+/* Viewership Over Time Section */
+#viewershipMain {
+    text-align: center;
+}
+#viewershipChart {
+    width: 100%;
+    height: 400px;
+}
+#viewershipButtonContainer {
+    margin-top: 20px;
+}
+
+/* Style for the Episode Viewership Over Time title */
+#viewershipOverTime h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#viewershipBackButton {
+    background-color: rgb(217, 72, 82);
+    color: white; 
+}
+
+#viewershipBackButton:hover {
+    background-color: #d45d6d;
+}
+
+#viewershipNextButton {
+    background-color: rgb(73, 73, 233);
+    color: white; 
+}
+
+#viewershipNextButton:hover {
+    background-color: #0056b3;
+}
+
+#viewershipBackButton, #viewershipNextButton {
+    width: 125px; 
+    height: 50px; 
+    padding: 0; 
+    font-size: 1em; 
+    border-radius: 8px; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    line-height: 50px; 
+    text-align: center; 
+    margin: 0 15px; 
+}
+
+
+/* General styles for the Director Analysis page */
+#directorAnalysis {
+    padding: 20px;
+}
+
+#directorContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#directorTable {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+#directorTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#directorTable th, #directorTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#directorTable th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+#directorChart {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+#directorButtonContainer {
+    margin-top: 20px;
+}
+
+#directorBackButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#directorBackButton:hover {
+    background-color: #0056b3;
+}
+
+#directorTable {
+    width: 100%;
+    padding: 20px;
+}
+
+#directorTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#directorTable th, #directorTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#directorBackButton, #homeButton {
+    width: 160px; 
+    height: 50px; 
+    padding: 0; 
+    font-size: 1em;
+    border-radius: 8px; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    line-height: 50px; 
+    text-align: center; 
+    margin: 0 15px; 
+}
+
+#directorBackButton {
+    background-color: rgb(217, 72, 82);
+    color: white;
+}
+
+#directorBackButton:hover {
+    background-color: #d45d6d;
+}
+
+#homeButton {
+    background-color: rgb(73, 73, 233);
+    color: white;
+}
+
+#homeButton:hover {
+    background-color: #0056b3;
+}

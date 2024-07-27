@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Guy Episode Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Homepage Section -->
+    <main id="homepage">
+        <img src="images/Family_Guy_Logo.svg.png" alt="Family Guy Logo" id="homepageLogo">
+        <p id="homepageTitle">Episode Analysis</p>
+        <section id="homepageDescription">
+            <p>
+                Welcome to the Family Guy Episode Analysis. This webpage explores various aspects of Family Guy episodes, including ratings, trends, and comparisons across seasons. Dive in to understand the dynamics of this beloved show through interactive visualizations.
+            </p>
+        </section>
+        <button id="homepageOverviewButton">Episode Overview</button>
+        <div id="footer">
+            <p>&copy; 2024 by Will Bazal. All right reserved.</p>
+        </div>
+    </main>
+
+    <!-- Episode Overview Section -->
+    <main id="episodeOverview" style="display:none">
+        <div id="episodeOverviewMain">
+            <header>
+                <h2>Family Guy Episode Performance</h2>
+                <h5>Though not by much, it appears that Family Guy performed better in the earlier seasons of the show.</h5>
+                <h5>(Hover over any episode rating to see additional information.)</h5>
+            </header>
+        </div>
+        <div id="buttonContainer">
+            <button id="backButton">Back to Home</button>
+            <button id="nextPageButton">Next Page</button>
+        </div>
+    </main>
+
+    <!-- Viewership Over Time Section -->
+    <main id="viewershipOverTime" style="display:none">
+        <div id="viewershipMain">
+            <header>
+                <h2>Family Guy Viewership per Season</h2>
+                <h4>This chart breaks down which seasons brought in the most viewers.</h4>
+            </header>
+        </div>
+        <div id="viewershipChart"></div>
+        <div id="viewershipButtonContainer">
+            <button id="viewershipBackButton">Previous Page</button>
+            <button id="viewershipNextButton">Next Page</button>
+        </div>
+    </main>
+
+    <!-- Director Analysis Section -->
+    <main id="directorAnalysis" style="display:none">
+        <header>
+            <h2>Most Successful Family Guy Directors</h2>
+            <h4>These charts show which directors were most involved, as well as most successful with this show.</h4>
+        </header>
+        <div id="directorContent">
+            <div id="directorTable"></div>
+            <div id="directorChart"></div>
+        </div>
+        <div id="directorButtonContainer">
+            <button id="directorBackButton">Previous Page</button>
+            <button id="homeButton">Back to Home</button>
+        </div>
+    </main>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="homepage.js"></script>
+    <script src="episode-overview.js"></script>
+    <script src="viewership.js"></script>
+    <script src="director-analysis.js"></script>
+</body>
+</html>
